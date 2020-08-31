@@ -18,7 +18,7 @@ def predict():
 
     output = round(prediction[0],4)
 
-    return render_template('index.html', prediction_text='Treatability const (Kw [m/bar/min])*10000 is  $ {}'.format(output))
+    return render_template('index.html', prediction_text='Treatability const (Kw [m/bar/min])*10000 is {}'.format(output))
 
 @app.route('/results',methods=['POST'])
 def results():
